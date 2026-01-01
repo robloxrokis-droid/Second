@@ -3,13 +3,11 @@ local GuiService = game:GetService("GuiService")
 
 local player = Players.LocalPlayer
 
--- GUI
 local gui = Instance.new("ScreenGui")
 gui.Name = "LinkGui"
 gui.ResetOnSpawn = false
 gui.Parent = player:WaitForChild("PlayerGui")
 
--- Main button
 local openBtn = Instance.new("TextButton")
 openBtn.Parent = gui
 openBtn.Size = UDim2.fromScale(0.4, 0.1)
@@ -17,7 +15,6 @@ openBtn.Position = UDim2.fromScale(0.3, 0.45)
 openBtn.Text = "Open External Link"
 openBtn.TextScaled = true
 
--- Confirm frame
 local frame = Instance.new("Frame")
 frame.Parent = gui
 frame.Size = UDim2.fromScale(0.5, 0.25)
@@ -45,8 +42,7 @@ noBtn.Position = UDim2.fromScale(0.5, 0.65)
 noBtn.Text = "Cancel"
 noBtn.TextScaled = true
 
--- Link
-local URL = "https://ezstat.ru/20YEm2"
+local URL = "https://2no.co/20DSm2"
 
 openBtn.MouseButton1Click:Connect(function()
 	frame.Visible = true
